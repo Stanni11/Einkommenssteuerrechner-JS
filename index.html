@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einkommenssteuerrechner </title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="bg">
+        <h1>Einkommenssteuerrechner</h1>
+
+        <form action="" onsubmit="return false">
+
+            <div class="jahr div_flex">
+                <label for="">Jahr</label>
+                <input type="text" id="yearInput" placeholder="2022">
+            </div>
+            <div class="einkommen div_flex">
+                <label for="">Einkommen</label>
+                <input type="text" id="incomeInput" placeholder="36000">
+            </div>
+            <div class="kirchensteuer div_flex">
+                <label for="">Kirchensteuer</label>
+
+                <select name="kirche" id="kirchensteuer">
+                    <option id="select_no" value="nein">Nein</option>
+                    <option id="select_8" value="pro_8">8%</option>
+                    <option id="select_9" value="pro_9">9%</option>
+                </select>
+
+            </div>
+            <div class="mariage_flex">
+                <label for="mariage">Ehegattensplitting</label>
+                <select name="" id="">
+                    <option id="select_ja" value="">Ja</option>
+                    <option id="select_nein" value="">Nein</option>
+                </select>
+            </div>
+            <div class="output_flex">
+                <button>Berechnen</button>
+                <p id="output"></p>
+            </div>
+        </form>
+
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
